@@ -3,7 +3,7 @@ import psycopg2
 
 app = FastAPI()
 
-DB_URL = "postgresql://postgres:##Ne730380##@18.198.145.223:5432/postgres?sslmode=require"
+DB_URL = "postgresql://postgres.tcwgywxgpzsdwcsofuvj:##Ne730380##@18.198.145.223:5432/postgres?sslmode=require"
 
 @app.get("/")
 def test_connexion():

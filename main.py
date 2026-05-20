@@ -4,7 +4,7 @@ import psycopg2
 app = FastAPI()
 
 # Remplace par ta vraie ligne Supabase (avec ton mot de passe)
-DB_URL = "postgresql://postgres##Ne730380##@db.tcwgywxgpzsdwcsofuvj.supabase.co:5432/postgres?gssencmode=disable"
+DB_URL = "postgresql://postgres[##Ne730380##]@db.tcwgywxgpzsdwcsofuvj.supabase.co:5432/postgres?gssencmode=disable"
 
 @app.get("/")
 def test_connexion():

@@ -1,9 +1,12 @@
 from fastapi import FastAPI
 import psycopg2
+import os
 
 app = FastAPI()
 
-DB_URL = "postgresql://postgres.tcwgywxgpzsdwcsofuvj:##Ne730380##@aws-0-eu-west-1.pooler.supabase.com:5432/postgres"
+
+DB_URL = os.environ.get("DATABASE_URL")
+
 
 @app.get("/")
 def test_connexion():
